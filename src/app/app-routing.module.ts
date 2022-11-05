@@ -3,6 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'welcome',
+    pathMatch: 'full'
+  },
+  {
     path: 'welcome',
     loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
   },
@@ -21,6 +26,10 @@ const routes: Routes = [
   {
     path: 'reset',
     loadChildren: () => import('./auth/reset/reset.module').then( m => m.ResetPageModule)
+  },
+  {
+    path: 'list-replacement',
+    loadChildren: () => import('./pages/list-replacement/list-replacement.module').then( m => m.ListReplacementPageModule)
   },
 ];
 @NgModule({
