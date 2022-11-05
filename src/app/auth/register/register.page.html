@@ -1,12 +1,49 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-icon name="arrow-back-outline" routerLink="/welcome" size="large" class="ion-padding"></ion-icon>
     </ion-buttons>
+    <ion-title>registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-text color="primary" class="ion-text-center">
+    <h4>REGISTRATE</h4>
+    <h5>MI AUTO</h5>
+  </ion-text>
+  <form #frm="ngForm">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input required type="text" name="usrname"   clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo electronico</ion-label>
+      <ion-input required type="email" name="mail"   clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input required type="password" name="pass"   clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Repetir contraseña</ion-label>
+      <ion-input required type="password" name="pass"   clearInput></ion-input>
+    </ion-item>
+    <ion-text color="primary" class="ion-text-center">
+      <h4>Or</h4>
+    </ion-text>
+    <ion-buttons class="my-icons">
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-facebook"></ion-icon>
+    </ion-buttons>
+    <ion-button color="secondary" type="submit" [disabled]="frm.invalid" class="my-button">
+      Registrar datos
+    </ion-button>
+  </form>
+  <ion-text class="ion-text-center" routerLink="/login">
+    <p>¿Ya tienes cuenta? haz click aqui</p>
+  </ion-text>
+  <ion-text class="ion-text-center">
+    <h5>MI AUTO</h5>
+  </ion-text>
 </ion-content>
