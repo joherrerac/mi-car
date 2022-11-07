@@ -3,7 +3,6 @@
     <ion-buttons slot="start">
       <ion-icon name="arrow-back-outline" routerLink="/welcome" size="large" class="ion-padding"></ion-icon>
     </ion-buttons>
-    <ion-title>registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -36,9 +35,17 @@
       <ion-icon name="logo-twitter"></ion-icon>
       <ion-icon name="logo-facebook"></ion-icon>
     </ion-buttons>
-    <ion-button color="secondary" type="submit" [disabled]="frm.invalid" class="my-button">
+    <div class="my-button-register">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" [disabled]="frm.invalid" class="ion-text-center ion-text-capitalize">
       Registrar datos
     </ion-button>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </form>
   <ion-text class="ion-text-center" routerLink="/login">
     <p>¿Ya tienes cuenta? haz click aqui</p>
