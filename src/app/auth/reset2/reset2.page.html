@@ -1,6 +1,5 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title>cambiar contraseña</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +9,7 @@
     <h5>MI AUTO</h5>
   </ion-text>
     <ion-text class="ion-text-center">
-      <p>Escriba su nueva contraseña y confirmela a continuacion para poder registrar el cambio</p>
+      <p>Escriba su nueva contraseña y confirme el cambio a continuacion para actualizar sus credenciales de seguridad</p>
     </ion-text>
   <form #frm="ngForm">
     <ion-item>
@@ -21,9 +20,17 @@
       <ion-label position="floating">Repetir contraseña</ion-label>
       <ion-input required type="password" name="pass"   clearInput></ion-input>
     </ion-item>
-    <ion-button color="primary" routerLink="/login" type="submit" [disabled]="frm.invalid" class="ion-top-margin">
+    <div class="my-button-reset2">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" routerLink="/login" type="submit" [disabled]="frm.invalid" class="ion-text-center ion-text-capitalize">
       Ir a iniciar sesion
     </ion-button>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
+    </div>
   </form>
   <ion-text class="ion-text-center">
     <h5>MI AUTO</h5>

@@ -3,7 +3,6 @@
     <ion-buttons slot="start">
       <ion-icon name="arrow-back-outline" routerLink="/welcome" size="large" class="ion-padding"></ion-icon>
     </ion-buttons>
-    <ion-title>registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -25,9 +24,17 @@
       <ion-checkbox slot="start"></ion-checkbox>
       <ion-label>Recuerdame</ion-label>
     </ion-item>
-    <ion-button color="primary" type="submit" [disabled]="frm.invalid" class="ion-margin-top">
+    <div class="body">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" [disabled]="frm.invalid" class="ion-text-center ion-text-capitalize">
       Login
     </ion-button>
+    </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </form>
 
   <ion-text class="ion-text-center" routerLink="/reset" color="primary">

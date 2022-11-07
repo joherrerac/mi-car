@@ -3,13 +3,12 @@
     <ion-buttons slot="start">
       <ion-icon name="arrow-back-outline" routerLink="/login" size="large" class="ion-padding"></ion-icon>
     </ion-buttons>
-    <ion-title>restablecer contraseña</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-text color="primary" class="ion-text-center">
-    <h4>Recuperar contraseña</h4>
+    <h4>Restablecer contraseña</h4>
     <h5>MI AUTO</h5>
   </ion-text>
     <ion-text class="ion-text-center">
@@ -24,9 +23,17 @@
       <ion-label position="floating">Repetir correo electronico</ion-label>
       <ion-input required type="email" name="mail"   clearInput></ion-input>
     </ion-item>
-    <ion-button color="primary" type="submit" [disabled]="frm.invalid" class="ion-top-margin">
+    <div class="my-button-reset">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+    <ion-button color="primary" type="submit" [disabled]="frm.invalid" class="ion-text-center ion-text-capitalize">
       Enviar correo
     </ion-button>
+  </ion-col>
+    </ion-row>
+    </ion-grid>
+    </div>
   </form>
   <ion-text class="ion-text-center">
     <h5>MI AUTO</h5>
