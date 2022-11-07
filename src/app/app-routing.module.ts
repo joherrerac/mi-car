@@ -21,7 +21,15 @@ const routes: Routes = [
   {
     path: 'reset',
     loadChildren: () => import('./auth/reset/reset.module').then( m => m.ResetPageModule)
+  },  {
+    path: 'reset2',
+    loadChildren: () => import('./auth/reset2/reset2.module').then( m => m.Reset2PageModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+
 ];
 @NgModule({
   imports: [
