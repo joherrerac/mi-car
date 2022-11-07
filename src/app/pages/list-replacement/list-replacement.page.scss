@@ -1,0 +1,13 @@
+p {
+  font-size: 14px;
+  margin-top: 0px;
+}
+ion-toolbar {
+  --background: global-variable-exists($name: --ion-background-color)
+}
+.btn_add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 45%;
+}
