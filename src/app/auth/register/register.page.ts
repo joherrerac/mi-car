@@ -7,14 +7,11 @@ import { FirestoreService } from '../../services/firestore.service';
   styleUrls: ['./register.page.scss'],
 })
 export class RegisterPage implements OnInit {
+  constructor(private firestore: FirestoreService) {}
 
-  constructor(private firestore: FirestoreService) { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  getPrueba() {
+    this.firestore.getCollection();
   }
-
-  getPrueba()
-{
-  this.firestore.getCollection()
-}
 }
