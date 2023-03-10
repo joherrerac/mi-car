@@ -15,14 +15,14 @@
         <h1>iniciar sesión</h1>
       </ion-card-title>
       <ion-card-subtitle class="ion-text-center ion-text-capitalize" color="primary">
-        <h4>MI AUTO</h4>
+        <h4>AutoMinder</h4>
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
       <form #form="ngForm">
-        <ion-item>
+        <ion-item fill="solid">
           <ion-label position="floating">Correo electronico</ion-label>
-          <ion-input required type="email" name="mail" [required] clearInput></ion-input>
+          <ion-input required type="email" name="mail" required clearInput inputmode="email"></ion-input>
         </ion-item>
         <ion-item>
           <ion-label position="floating">Password</ion-label>
@@ -60,7 +60,7 @@
 <ion-footer collapse="fade">
   <ion-toolbar>
     <ion-text class="ion-text-center">
-      <h5>MI AUTO</h5>
+      <h5>AutoMinder</h5>
     </ion-text>
   </ion-toolbar>
 </ion-footer>
